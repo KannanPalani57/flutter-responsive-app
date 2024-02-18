@@ -3,19 +3,19 @@ import 'package:responsive_architecture_flutter/enums/device_screen_type.dart';
 
 class SizingInformation {
   final Orientation? orientation;
-  final DeviceScreenType? deviceType;
+  final DeviceScreenType? deviceScreenType;
   final Size? screenSize;
   final Size? localWidgetSize;
 
   SizingInformation({
     this.orientation,
-    this.deviceType,
+    this.deviceScreenType,
     this.screenSize,
     this.localWidgetSize,
   });
 
   @override
   String toString() {
-    return 'Orientation:$orientation DeviceType:$deviceType ScreenSize:$screenSize LocalWidgetSize:$localWidgetSize';
+    return 'Orientation:$orientation DeviceType:$deviceScreenType ScreenSize:$screenSize LocalWidgetSize:$localWidgetSize';
   }
 }
